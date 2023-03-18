@@ -6,9 +6,22 @@ export interface PostType {
     expand: any;
     id: string;
     image: string;
-    likes: number;
     title: string;
     updated: string;
     user: string;
     isNew: boolean;
+}
+
+export interface UserType {
+    id: string;
+    collectionId: string;
+    collectionName: string;
+    username: string; 
+    email: string; 
+    emailVisibility: boolean;
+    verified: boolean;
+    created: string;
+    updated: string;
+    name: string;
+    avatar: string;
 }
