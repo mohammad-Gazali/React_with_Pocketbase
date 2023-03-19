@@ -77,7 +77,7 @@ const CreatePost = ({ setPosts }: { setPosts: React.Dispatch<React.SetStateActio
             </svg>
         </button>
         <div onClick={() => setOpen(false)} className={`${open ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none" } fixed inset-0 bg-black/60 cursor-pointer transition-all z-10`}></div>
-        <form encType='multipart/form-data' className={`${open ? "scale-100 visible pointer-events-auto" : "scale-0 invisible pointer-events-none"} fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 transition-all card bg-base-100 shadow-xl p-4 pb-8 w-[440px]`} onSubmit={handleSubmit}>
+        <form encType='multipart/form-data' className={`${open ? "scale-100 visible pointer-events-auto" : "scale-0 invisible pointer-events-none"} fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 transition-all card bg-base-100 shadow-xl p-4 pb-8 w-full lg:max-w-[400px] max-w-[90%] mx-1`} onSubmit={handleSubmit}>
             <h3 className='font-bold text-3xl text-secondary-content mb-4 bg-secondary p-2 py-4 rounded-xl text-center'>
                 Create Post
             </h3>
